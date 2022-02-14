@@ -103,18 +103,6 @@ li {
   width: 86%; 
   margin: 0 auto;
 }
-/*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
 
 /*=================================
   main styling starts here
@@ -124,17 +112,23 @@ main {
   display: flex;
 }
 
-main > div {
+.device {
   height: 100vh;
   flex-basis: 50%;
-  background-image: url(../pics/playstation5.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(../pics/playstation5.jpg) no-repeat center center /cover;
+  background-color: rgba(87, 84, 236, 0.7);
+  background-blend-mode: overlay;
+  overflow: hidden;
+  transition: all ease-in-out 1s;
+  -webkit-transition: all ease-in-out 1s;
+  -o-transition: all ease-in-out 1s;
+  -moz-transition: all ease-in-out 1s;
+  -ms-transition: all ease-in-out 1s;
 }
 
 .xbox-series-x {
   background: url(../pics/xbox.jpg);
+  background-color: rgba(43, 43, 43, 0.8);
 }
 
 .device-contents {
@@ -144,19 +138,17 @@ main > div {
 
 h1,a {
   color: #fff;
-  font-size: 63px;
+  font-size: 62px;
   font-weight: bold;
+  white-space: nowrap;
 }
-
-
 
 a {
   padding: 25px 80px;
   margin-top: 20px;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
   font-size: 15px;
 }
-
 
 .playstation-5 a:hover {
   background-color: #5754EC;
@@ -166,30 +158,16 @@ a {
   background-color: #008000;
 }
 
-
-
-/*=================================
-  main styling ends here
-=================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
 /*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
 
+  h1 {
+    font-size: 26px;
+  }
 
+  a {
+    font-size: 9px;
+  }
 
 }  
