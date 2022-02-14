@@ -125,9 +125,6 @@ main {
 
 main div {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-basis: 50%;
   background-image: url(../pics/playstation5.jpg);
   background-size: cover;
