@@ -119,35 +119,52 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+
 main {
   display: flex;
 }
 
-main div {
+main > div {
   height: 100vh;
   flex-basis: 50%;
   background-image: url(../pics/playstation5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-repeat: no-repeat
 }
 
 .xbox-series-x {
-  background: url(../pics/xbox.jpg),#000;
-  background-blend-mode: luminosity;
+  background: url(../pics/xbox.jpg);
+}
+
+.device-contents {
+  margin-top: 185px;
+  text-align: center;
 }
 
 h1,a {
   color: #fff;
+  font-size: 63px;
   font-weight: bold;
 }
 
+
+
 a {
-  display: block;
+  padding: 25px 80px;
+  margin-top: 20px;
+  border: 2px solid #fff;
+  font-size: 15px;
 }
 
 
+.playstation-5 a:hover {
+  background-color: #5754EC;
+}
 
-
+.xbox-series-x a:hover {
+  background-color: #008000;
+}
 
 
 
