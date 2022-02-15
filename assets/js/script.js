@@ -1,6 +1,6 @@
 const device = document.querySelectorAll('.device');
 
-for (let i = 0; i < device.length; i++) {
+for (let i in device) {
     device[i].addEventListener('mouseover', function () {
         for (let j = 0; j < device.length; j++) {
             device[j].style.flexBasis = "26%";
@@ -9,7 +9,7 @@ for (let i = 0; i < device.length; i++) {
     });
 
     device[i].addEventListener('mouseout', function () {
-        for (let j = 0; j < device.length; j++) {
+        for (let j in device) {
             device[j].style.flexBasis = "50%";
         }
     });
